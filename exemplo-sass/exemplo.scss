@@ -1,0 +1,17 @@
+%base-button {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button {
+  @extend %base-button;
+  background-color: #3498db;
+  color: white;
+}
+
+.button-danger {
+  @extend %base-button;
+  background-color: red;
+  color: white;
+}
