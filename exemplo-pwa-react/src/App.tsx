@@ -17,6 +17,7 @@ const App = () => {
       <video autoPlay={true} loop={true} controls={true}>
         <source src={videoSample} type="video/mp4" />
       </video>
+      <p className={styles.label}>Um vídeo de uma montanha</p>
     </div>
   );
 };
