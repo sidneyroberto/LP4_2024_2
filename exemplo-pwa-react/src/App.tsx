@@ -1,6 +1,6 @@
 import img01 from "./assets/img/img01.jpg";
 import img02 from "./assets/img/img02.jpg";
-import videoSample from "./assets/video/mountain.mp4";
+import videoSample from "./assets/video/cat.mp4";
 import styles from "./App.module.css";
 
 const App = () => {
