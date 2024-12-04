@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Word } from "../../models/Word";
 import {
   WordCardPanel,
@@ -13,7 +14,12 @@ type Props = {
 
 const WordCard = ({ order, word }: Props) => {
   const { audioUrls, meanings, term } = word;
-  const details = `${meanings.length} significado(s) e ${audioUrls.length} áudio(s) de pronúncia`;
+
+  const { t } = useTranslation();
+  const details = t("home.wordDetails", {
+    numberOfMeanings: meanings.length,
+    numberOfAudios: audioUrls.length,
+  });
 
   return (
     <WordCardPanel data-cy="word-card">
