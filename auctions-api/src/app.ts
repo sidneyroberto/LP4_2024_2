@@ -14,7 +14,10 @@ const messages: Bid[] = [];
 export const server = createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: `${process.env.AUCTIONEER_APP_URL}`,
+    origin: [
+      `${process.env.AUCTIONS_APP_URL}`,
+      `${process.env.AUCTIONEER_APP_URL}`,
+    ],
     methods: ["GET", "POST"],
   },
 });
